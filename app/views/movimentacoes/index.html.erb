@@ -1,0 +1,22 @@
+<h2>📜 Movimentações de <%= @produto.nome %></h2>
+
+<table border="1" cellpadding="5">
+  <tr>
+    <th>Tipo</th>
+    <th>Quantidade</th>
+    <th>Data</th>
+  </tr>
+
+  <% @movimentacoes.each do |mov| %>
+    <tr>
+      <td><%= mov.tipo %></td>
+      <td><%= mov.quantidade %></td>
+      <td><%= mov.data.strftime("%d/%m/%Y %H:%M") %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p>
+  <%= link_to "Registrar nova movimentação", new_produto_movimentaco_path(@produto) %>
+  <%= link_to "Voltar para produtos", produtos_path %>
+</p>

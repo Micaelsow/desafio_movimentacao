@@ -1,0 +1,6 @@
+<h2>Detalhes do Produto</h2>
+<p>Nome: <%= @produto.nome %></p>
+<p>Descrição: <%= @produto.descricao %></p>
+<p>Quantidade: <%= @produto.quantidade %></p>
+<p>Preço: R$ <%= '%.2f' % (@produto.preco || 0) %></p>
+<%= link_to "Voltar", produtos_path %>

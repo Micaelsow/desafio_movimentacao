@@ -1,0 +1,15 @@
+<%= form_with model: produto do |f| %>
+  <p><%= f.label :nome, "Nome do produto" %><br>
+  <%= f.text_field :nome %></p>
+
+  <p><%= f.label :descricao, "Descrição" %><br>
+  <%= f.text_area :descricao %></p>
+
+  <p><%= f.label :quantidade, "Quantidade em estoque" %><br>
+  <%= f.number_field :quantidade %></p>
+
+  <p><%= f.label :preco, "Preço" %><br>
+  <%= f.number_field :preco, step: 0.01 %></p>
+
+  <%= f.submit "Salvar" %>
+<% end %>

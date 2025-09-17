@@ -1,0 +1,20 @@
+<h2>Registrar movimentação para <%= @produto.nome %></h2>
+
+<%= form_with model: [@produto, @movimentacao] do |f| %>
+  <p>
+    <%= f.label :tipo, "Tipo de movimentação" %><br>
+    <%= f.select :tipo, ["Entrada", "Saída"] %>
+  </p>
+
+  <p>
+    <%= f.label :quantidade, "Quantidade" %><br>
+    <%= f.number_field :quantidade, min: 1 %>
+  </p>
+
+  <%= f.submit "Registrar movimentação" %>
+<% end %>
+
+<p>
+  <%= link_to "Voltar para movimentações", produto_movimentacoes_path(@produto) %> |
+  <%= link_to "Voltar para produtos", produtos_path %>
+</p>

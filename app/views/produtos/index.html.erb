@@ -1,0 +1,27 @@
+<h2>📋 Lista de Produtos</h2>
+
+<table border="1" cellpadding="5">
+  <tr>
+    <th>Nome</th>
+    <th>Descrição</th>
+    <th>Quantidade</th>
+    <th>Preço</th>
+    <th>Ações</th>
+  </tr>
+
+<% @produtos.each do |p| %>
+  <tr>
+    <td><%= p.nome %></td>
+    <td><%= p.descricao %></td>
+    <td><%= p.quantidade %></td>
+    <td>R$ <%= '%.2f' % (p.preco || 0) %></td>
+    <td>
+      <%= link_to "Editar", edit_produto_path(p) %>
+      <%= button_to "Excluir", produto_path(p), method: :delete, data: { confirm: "Tem certeza que deseja excluir este produto?" } %>
+      <%= link_to "Movimentações", produto_movimentacoes_path(p) %>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to "Cadastrar novo produto", new_produto_path %>
