@@ -1,28 +1,59 @@
-<<<<<<< HEAD
-# desafio_movimentacao
-=======
-# README
+# Sistema de Gestão de Estoque
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 🚀 Como rodar
 
-Things you may want to cover:
+### Clone o repositório:
+git clone https://github.com/Micaelsow/desafio_movimentacao.git
 
-* Ruby version
+cd desafio_movimentacao
 
-* System dependencies
+### Instale as dependências:
+``` bundle install ```
 
-* Configuration
+### Crie e migre o banco de dados: 
+``bin/rails db:create``
+``bin/rails db:migrate``
 
-* Database creation
+### Rode o servidor: 
+`` rails s ``
 
-* Database initialization
+### Acesse no navegador:
+``http://localhost:3000``
 
-* How to run the test suite
+## Funcionalidades
 
-* Services (job queues, cache servers, search engines, etc.)
+Cadastro de produtos (nome, descrição, quantidade e preço)
 
-* Deployment instructions
+Listagem de produtos
 
-* ...
->>>>>>> 8136f07 (Initial commit)
+Registro de movimentações (Entrada/Saída)
+
+Controle de estoque (não permite estoque negativo)
+
+Histórico de movimentações por produto
+
+Edição e exclusão de produtos
+
+📚 O que aprendi
+
+Ruby on Rails básico e CRUD
+
+ActiveRecord e associações
+
+Lógica de controle de estoque
+
+Fluxo de commits e rebase no Git
+
+⚡ Principais desafios
+
+Resolver conflitos de Git
+
+Garantir que estoque não ficasse negativo
+
+Preparar banco de dados de teste
+
+❌ Funcionalidades não finalizadas
+
+Relatórios avançados
+
+Interface estilizada (apenas funcional)
