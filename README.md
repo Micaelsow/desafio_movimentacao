@@ -1,6 +1,6 @@
 # Sistema de Gestão de Estoque
 
-## 🚀 Como rodar
+## 🚀 Como rodar:
 
 ### Clone o repositório:
 git clone https://github.com/Micaelsow/desafio_movimentacao.git
@@ -20,40 +20,37 @@ cd desafio_movimentacao
 ### Acesse no navegador:
 ``http://localhost:3000``
 
-## Funcionalidades
+## Funcionalidades:
 
-Cadastro de produtos (nome, descrição, quantidade e preço)
+- Cadastro de produtos (nome, descrição, quantidade e preço)
 
-Listagem de produtos
+- Listagem de produtos
 
-Registro de movimentações (Entrada/Saída)
+- Registro de movimentações (Entrada/Saída)
 
-Controle de estoque (não permite estoque negativo)
+- Controle de estoque (não permite estoque negativo)
 
-Histórico de movimentações por produto
+- Histórico de movimentações por produto
 
-Edição e exclusão de produtos
+- Edição e exclusão de produtos
 
-📚 O que aprendi
+## O que aprendi:
 
-Ruby on Rails básico e CRUD
+- Ruby on Rails básico
 
-ActiveRecord e associações
+- Lógica de controle de estoque
 
-Lógica de controle de estoque
+- Fluxo de commits
 
-Fluxo de commits e rebase no Git
+## Principais desafios:
+- Entender o funcionamento do On Rails
 
-⚡ Principais desafios
+- Resolver conflitos de Git
 
-Resolver conflitos de Git
+- Garantir que estoque não ficasse negativo
 
-Garantir que estoque não ficasse negativo
+## Funcionalidades não finalizadas
 
-Preparar banco de dados de teste
+- Relatórios avançados
 
-❌ Funcionalidades não finalizadas
-
-Relatórios avançados
-
-Interface estilizada (apenas funcional)
+- Interface estilizada (apenas funcional)
